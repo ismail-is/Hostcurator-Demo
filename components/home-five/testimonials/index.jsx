@@ -33,6 +33,7 @@ const testimonialsData = [
 		img: TestimonialImg,
 	},
 ];
+
 const swiperSettings = {
 	slidesPerView: 1,
 	pagination: {
@@ -40,31 +41,40 @@ const swiperSettings = {
 	},
 	modules: [Pagination],
 };
-function Testimonials() {
+
+function Testimonialss() {
 	return (
 		<div className="section aximo-section-padding2">
 			<div className="container">
-				<div className="aximo-section-title libre-font">
-					<div className="row">
-						<div className="col-lg-7">
-							<h2>Reviews from our satisfied customers</h2>
+				<div className="row align-items-center">
+					{/* Left Side - Image */}
+					
+
+					{/* Right Side - Testimonial Slider */}
+					<div className="col-md-6" style={{backgroundColor:'#025E6B',borderRadius:'29px',padding:'20px'}}>
+						<div className="swiper aximo-testimonial-slider"  >
+							<Swiper {...swiperSettings} >
+								{testimonialsData.map((testimonial) => (
+									<SwiperSlide key={testimonial.id} >
+										<TestimonialCard testimonial={testimonial} />
+									</SwiperSlide>
+								))}
+							</Swiper>
 						</div>
 					</div>
-				</div>
-				<div className="swiper aximo-testimonial-slider">
-					{
-						<Swiper {...swiperSettings}>
-							{testimonialsData.map((testimonial) => (
-								<SwiperSlide key={testimonial.id}>
-									<TestimonialCard testimonial={testimonial} />
-								</SwiperSlide>
-							))}
-						</Swiper>
-					}
+					<div className="col-md-6 text-center">
+						<div className="aximo-testimonial-slider-thumb">
+							<img
+								src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/ReviewSection.png"
+								alt="img"
+								className="img-fluid"
+							/>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default Testimonials;
+export default Testimonialss;

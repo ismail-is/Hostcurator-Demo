@@ -27,8 +27,8 @@ import "../../public/css/main.css";
 import "../../public/css/mobile-nav.css";
 
 export const metadata = {
-	title: "Aximo || Responsive Next.js Template - Home Two",
-	description: "Aximo || Responsive Next.js Template Home Two",
+	title: "HOSTCURATOR",
+	description: "https://dev.hostcurator.com/",
 };
 
 export default function HomeTwoLayout({ children }) {

@@ -8,12 +8,15 @@ import Testimonial from "@/components/home-one/testimonial";
 import WhyChooseUs from "@/components/home-one/why-choose-us";
 import BrandLogo from "@/components/home-two/brand-logo";
 import PricingPlan from "@/components/pricing/PricingPlan";
-
+import Blogs from "@/components/home-six/blogs";
+import Testimonials from "@/components/home-five/testimonials";
 // Teams images
 import Team1Img from "@/public/images/team/team1.png";
 import Team2Img from "@/public/images/team/team2.png";
 import Team3Img from "@/public/images/team/team3.png";
 import Team4Img from "@/public/images/team/team4.png";
+import TestimonialsCard from "@/components/home-four/testimonials/TestimonialsCard";
+import Testimonialss from "@/components/home-five/testimonials";
 
 const servicesData = [
 	{
@@ -110,17 +113,25 @@ const teamsData = [
 export default function HomeOne() {
 	return (
 		<>
-			<Hero />
+			{/* <Hero /> */}
+			{/* <Blogs /> */}
+
+			<Projects />
 			<Services services={servicesData} />
 			<AutoSlider />
 			<PricingPlan />
 			<BrandLogo />
-			<About />
+			<Testimonialss/>
+			{/* <div style={{backgroundColor:'black',margin:"0,20px,0,30px"}}>
+			<img src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/BottomLogo.png"/>
+			</div> */}
+			<TestimonialsCard/>
+			{/* <About />
 			<Projects />
 			<WhyChooseUs />
-			<Testimonial />
+			<Testimonial /> */}
 			{/* <AutoSlider /> */}
-			<Teams teams={teamsData} />
+			{/* <Teams teams={teamsData} /> */}
 		</>
 	);
 }

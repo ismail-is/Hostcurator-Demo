@@ -7,13 +7,14 @@ import Features from "@/components/home-five/features";
 import Hero from "@/components/home-five/hero";
 import Projects from "@/components/home-five/projects";
 import Services from "@/components/home-five/services";
+import Testimonialss from "@/components/home-five/testimonials";
 import Testimonials from "@/components/home-five/testimonials";
 import Video from "@/components/home-five/video";
 
 function HomeFive() {
 	return (
 		<div className="aximo-all-section bg-light6">
-			<Hero />
+			{/* <Blogs /> */}
 			<Video />
 			<Features />
 			<WaveShape />
@@ -24,7 +25,7 @@ function HomeFive() {
 			<WaveShape />
 			<Faq />
 			<WaveShape />
-			<Testimonials />
+			<Testimonialss/>
 			<Cta />
 		</div>
 	);

@@ -5992,7 +5992,9 @@ img.aximo-video-circle {
 	border: 10px;
 	padding: 40px;
 	margin-bottom: 24px;
-	border: 2px solid #191931;
+	/* border: 2px solid #191931; */
+	margin: 30px;
+	background-color: #2A2A2A;
 }
 .aximo-testimonial-wrap3:hover {
 	box-shadow: none;
@@ -6332,27 +6334,28 @@ img.aximo-video-circle {
 	justify-content: center;
 	border-radius: 100%;
 	transition: all 0.4s;
-	border: 1px solid var(--white-smoke);
-	background-color: var(--dark-bg);
+	border: 1px solid black;
+	background-color:white;
 }
 .aximo-social-icon ul li a i {
 	transition: all 0.4s;
-	color: var(--white-smoke);
+	color: black;
+	font-weight: lighter;
 }
 .aximo-social-icon ul li a:hover i {
 	color: var(--heading-color);
 }
 .aximo-social-icon ul li a:hover {
-	background-color: var(--accent-bg);
+	background-color: #7947DD;
 	box-shadow: 0 2px 0 0 var(--white-smoke);
 	border: 1px solid var(--dark-bg);
 }
 .aximo-social-icon.social-large ul li a {
-	width: 45px;
-	height: 45px;
+	width: 35px;
+	height: 35px;
 }
 .aximo-social-icon.social-large ul li a i {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .aximo-social-icon2 ul li {

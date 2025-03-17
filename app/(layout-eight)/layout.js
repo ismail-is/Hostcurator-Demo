@@ -23,8 +23,8 @@ import "../../public/css/app.css";
 import "../../public/css/main.css";
 
 export const metadata = {
-	title: "Aximo || Responsive Next.js Template",
-	description: "Aximo || Responsive Next.js Template",
+	title: "https://dev.hostcurator.com",
+	description: "https://dev.hostcurator.com/",
 };
 
 export default function LayoutEight({ children }) {

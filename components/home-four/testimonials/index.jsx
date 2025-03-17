@@ -8,17 +8,17 @@ function Testimonials() {
 			<div className="container">
 				<div className="aximo-section-title arimo-font">
 					<div className="row">
-						<div className="col-lg-7">
+						{/* <div className="col-lg-7">
 							<span className="aximo-subtitle">Client success stories</span>
 							<h2>Don&apos;t just trust us, hear from others</h2>
-						</div>
-						<div className="col-lg-5 d-flex align-items-end justify-content-end">
+						</div> */}
+						{/* <div className="col-lg-5 d-flex align-items-end justify-content-end">
 							<div className="aximo-title-btn">
 								<Link className="aximo-default-btn pill blue-btn" href="/service">
 									View all services
 								</Link>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<div className="row">

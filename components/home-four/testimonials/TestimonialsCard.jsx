@@ -2,90 +2,124 @@
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "@/components/animation/FadeInStaggerTwo";
 import Image from "next/image";
 import CountUp from "react-countup";
-import Thumb1Img from "../../../public/images/v1/t_thumb1.png";
-import Thumb2Img from "../../../public/images/v1/t_thumb2.png";
 import QuoteImg from "../../../public/images/v4/quote.png";
+
 function TestimonialsCard() {
-	return (
-		<FadeInStaggerTwo>
-			<FadeInStaggerTwoChildren className="row">
-				<div className="col-lg-4">
-					<div className="aximo-counter-wrap4">
-						<div className="aximo-counter-data4">
-							<h2>
-								<span className="aximo-counter">
-									<CountUp end={80} duration={3} redraw={true} enableScrollSpy />
-								</span>
-								k+
-							</h2>
-							<p>Years of experience</p>
-						</div>
-					</div>
-				</div>
-				<div className="col-lg-8">
-					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
-						<div className="aximo-testimonial-quote">
-							<Image src={QuoteImg} alt="QuoteImg" sizes="100vw" />
-						</div>
-						<div className="aximo-testimonial-data">
-							<p>
-								Excellent customer service and I was really impressed and happy with my purchase
-								especially as it was a last minute order which got to me in time, and when it arrived I
-								was very happy with the design and size and so was the recipient.
-							</p>
-						</div>
-						<div className="aximo-testimonial-author">
-							<div className="aximo-testimonial-author-thumb">
-								<Image src={Thumb1Img} alt="Thumb1Img" sizes="100vw" />
-							</div>
-							<div className="aximo-testimonial-author-data">
-								<span>William Jack </span>
-								<p>CEO & Founder @XYZ</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</FadeInStaggerTwoChildren>
-			<FadeInStaggerTwoChildren className="row">
-				<div className="col-lg-4 order-lg-2">
-					<div className="aximo-counter-wrap4">
-						<div className="aximo-counter-data4">
-							<h2>
-								<span className="aximo-counter">
-									<CountUp end={200} duration={3} redraw={true} enableScrollSpy />
-								</span>
-								+
-							</h2>
-							<p>Successfully finished projects</p>
-						</div>
-					</div>
-				</div>
-				<div className="col-lg-8">
-					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
-						<div className="aximo-testimonial-quote">
-							<Image src={QuoteImg} alt="QuoteImg" />
-						</div>
-						<div className="aximo-testimonial-data">
-							<p>
-								"Working with Mthemeus has been a game-changer for our company. Their tailored solutions
-								& hands-on approach have not only boosted our efficiency but have also opened up new
-								avenues for growth. They are an invaluable partner in our journey to success."
-							</p>
-						</div>
-						<div className="aximo-testimonial-author">
-							<div className="aximo-testimonial-author-thumb">
-								<Image src={Thumb2Img} alt="Thumb2Img" sizes="100vw" />
-							</div>
-							<div className="aximo-testimonial-author-data">
-								<span>Andrew Smith </span>
-								<p>Businessman</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</FadeInStaggerTwoChildren>
-		</FadeInStaggerTwo>
-	);
+  return (
+    <div style={{ backgroundColor: "black", padding: "20px" }}>
+      {/* Logo Section */}
+      <div style={{ backgroundColor: "black", display: "flex", justifyContent: "center" }}>
+        <img
+          src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/BottomLogo.png"
+          style={{ width: "90%",  }}
+          alt="Hostcurator Logo"
+        />
+      </div>
+
+      <FadeInStaggerTwo className="section">
+        <FadeInStaggerTwoChildren className="row">
+          <div className="col-lg-12" style={{ margin: 0 }}>
+            <div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
+              {/* Heading and Social Icons */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "10px",
+                  padding: "0px",
+                }}
+              >
+                <h2
+                  style={{
+                    padding: "0px",
+                    color: "#7947DD",
+                    textTransform: "uppercase",
+                    fontSize: "clamp(18px, 2vw, 24px)",
+                    fontWeight: "bolder",
+                  }}
+                >
+                  Let’s Connect
+                </h2>
+
+                <div className="aximo-social-icon social-large">
+                  <ul style={{ display: "flex", gap: "10px", listStyle: "none", padding: 0, flexWrap: "wrap" }}>
+                    <li>
+                      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i className="icon-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i className="icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i className="icon-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <i className="icon-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Horizontal Line */}
+              <hr style={{ border: "1px solid black", width: "100%", marginTop: "10px" }} />
+
+              {/* Contact Information */}
+              <div className="aximo-testimonial-data">
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "10px",
+                    marginTop: "20px",
+                    justifyContent: "start",
+                    textAlign: "start",
+                  }}
+                >
+                  <a href="mailto:info@hostcurator.com" style={{ color: "white", fontSize: "clamp(14px, 1.5vw, 18px)" }}>
+                    info@hostcurator.com
+                  </a>
+                  <img src="./images/allimg/logo/stars.png" style={{ height: "24px", marginTop: "2px" }} alt="Star" />
+                  <a href="tel:04844031073" style={{ color: "white", fontSize: "clamp(14px, 1.5vw, 18px)" }}>
+                    0484 4031073
+                  </a>
+                  <img src="./images/allimg/logo/stars.png" style={{ height: "24px", marginTop: "2px" }} alt="Star" />
+                  <a href="tel:+919496826626" style={{ color: "white", fontSize: "clamp(14px, 1.5vw, 18px)" }}>
+                    +91 9496826626
+                  </a>
+                </div>
+
+                {/* Another Horizontal Line */}
+                <hr style={{ border: "1px solid black", width: "100%", marginTop: "10px" }} />
+
+                {/* Address */}
+                <p
+                  style={{
+                    color: "white",
+                    fontSize: "clamp(16px, 1.8vw, 22px)",
+                    fontWeight: "lighter",
+                    textAlign: "start",
+                  }}
+                >
+                  Hostcurator IT Solutions PVT LTD<br />
+                  Host Tower, Room Number A, 41/2581-A2<br />
+                  Palarivattom, Kochi, Kerala 682028
+                </p>
+              </div>
+            </div>
+          </div>
+        </FadeInStaggerTwoChildren>
+      </FadeInStaggerTwo>
+    </div>
+  );
 }
 
 export default TestimonialsCard;

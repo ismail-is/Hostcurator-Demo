@@ -1,3 +1,4 @@
+import Testimonialss from "@/components/home-five/testimonials";
 import Blogs from "@/components/home-four/blogs";
 import BrandLogo from "@/components/home-four/brand-logo";
 import Hero from "@/components/home-four/hero";
@@ -19,7 +20,7 @@ function HomeFour() {
 			<WhyChooseUs />
 			<NumberBox />
 			<Projects />
-			<Testimonials />
+			<Testimonialss />
 			<Blogs />
 			<Instagrams />
 		</div>

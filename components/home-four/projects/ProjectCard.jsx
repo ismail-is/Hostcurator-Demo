@@ -6,9 +6,7 @@ function ProjectCard({ project: { title, description, img } }) {
 		<div className="aximo-project-wrap2">
 			<div className="aximo-project-thumb2">
 				<Image src={img} alt={title} sizes="100vw" />
-				<Link className="aximo-project-icon2" href="/single-portfolio">
-					<Image src={LinkImg} alt="LinkImg" />
-				</Link>
+				
 			</div>
 			<div className="aximo-project-data2">
 				<Link href="/single-portfolio">

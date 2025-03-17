@@ -27,8 +27,8 @@ import "../../public/css/main.css";
 import "../../public/css/mobile-nav.css";
 
 export const metadata = {
-	title: "Aximo || Responsive Next.js Template",
-	description: "Aximo || Responsive Next.js Template",
+	title: "HOSTCURATOR",
+	description: "https://dev.hostcurator.com/",
 };
 
 export default function HomeOneLayout({ children }) {
@@ -38,7 +38,7 @@ export default function HomeOneLayout({ children }) {
 				<ImportBsJS />
 				<Header />
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);
